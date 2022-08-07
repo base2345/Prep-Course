@@ -3,18 +3,31 @@
 function devolverPrimerElemento(array) {
   // Devuelve el primer elemento de un  array (pasado por parametro)
   // Tu código:
+  const nombreestudiantes = ["martin","antonio","sara","samuel" ];
+
+
+console.log(nombreestudiantes[0]);
+
 }
 
 
 function devolverUltimoElemento(array) {
   // Devuelve el último elemento de un array
   // Tu código:
+  const nombreestudiantes = ["martin","antonio","sara","samuel" ];
+const online = ["3","4","3" ];
+
+console.log(nombreestudiantes[nombreestudiantes.length-1]);
+
 }
 
 
 function obtenerLargoDelArray(array) {
   // Devuelve el largo de un array
   // Tu código:
+  let texto = "el mundo de la programacion"
+
+console.log(texto.length);
 }
 
 
