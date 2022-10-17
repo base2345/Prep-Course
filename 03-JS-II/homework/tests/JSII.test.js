@@ -20,7 +20,7 @@ const {
 
 describe('obtenerMayor(x, y)', function() {
   it('should return x if it is larger than y', function() {
-    expect(obtenerMayor(10, 5)).toBe(10);
+    expect(obtenerMayor(10, 5)).t10);
   });
   it('should return y if it is larger than x', function() {
     expect(obtenerMayor(50, 100)).toBe(100);

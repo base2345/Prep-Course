@@ -6,7 +6,7 @@ function obtenerMayor(x, y)
 {
     if(x>y)
     {
-        return x;
+        return x; 
     }else if(y>x)
     {
         return y
@@ -15,13 +15,31 @@ function obtenerMayor(x, y)
         return x || y;
     }
 }
-console.log(obtenermayor(2,89)
+console.log(obtenermayor(2,89))
 
 
 function mayoriaDeEdad(edad) {
   //Determinar si la persona según su edad puede ingresar a un evento.
   //Si tiene 18 años ó más, devolver --> "Allowed"
   //Si es menor, devolver --> "Not allowed"
+  
+ {
+    if (edad >= 18)
+        {
+        let edad = "alowed";
+        console.log(edad)
+        }
+        else if ( edad < 18)
+            {
+                let edad = " not allowed";
+                console.log(edad)
+
+            }
+
+   
+  }
+  console.log(mayoriaDeEdad(-18))
+
 }
   
 function conection(status) {
@@ -30,6 +48,22 @@ function conection(status) {
   //Cuando el estado es igual a 2, el usuario está "Away"
   //De lo contrario, presumimos que el usuario está "Offline"
   //Devolver el estado de conexión de usuario en cada uno de los casos.
+  function conection(status)
+     {
+        if(status === 1)
+        {
+            return "OnLine"
+        }
+        else if ( status === 2)
+        {
+            return "Away"
+        }
+        else
+        {
+            return "OffLine"
+        }
+     }
+     console.log(conection(1))
 }
 
 function saludo(idioma) {
@@ -39,6 +73,29 @@ function saludo(idioma) {
   // Si "idioma" es "ingles", devuelve "Hello!"
   // Si "idioma" no es ninguno de los anteiores o es `undefined` devuelve "Hola!"
   // Tu código:
+   
+  {
+     if (idioma === 'aleman')
+     {
+         return "Guten Tag";
+     
+     }
+     else if (idioma === 'mandarin')
+     {
+         return "Ni Hao!";
+     }
+     else if (idioma === 'ingles')
+     {
+         return "helow";
+     }
+     else
+     {
+         return "hola";
+     }
+ }
+ 
+ console.log(saludo(4))
+
 }
 
 function colors(color) {
@@ -49,36 +106,93 @@ function colors(color) {
   //En caso que el color recibido sea "orange", devuleve --> "This is orange"
   //Caso default: devuelve --> "Color not found"
   //Usar el statement Switch.
+  
+  {
+    switch(color)
+    {
+        case "BLUE":
+            return "THIS IS  BLUE";
+             
+        case "RED":
+            return "THIS IS  RED";
+
+        case "GREEN":
+            return "THIS IS GREEN";
+        case "ORANGE":
+            return "THIS IS ORANGE";
+            default :   
+
+             return "Color not found";
+    }
+  }
+  
+  console.log(colors("2"))
+  
 }
 
 function esDiezOCinco(numero) {
   // Devuelve "true" si "numero" es 10 o 5
   // De lo contrario, devuelve "false"
   // Tu código:
-}
+  
+    // Devuelve "true" si "numero" es 10 o 5
+    // De lo contrario, devuelve "false"
+    // Tu código:
+    return numero === 10 || numero === 5;
+    }
+    console.log(esDiezOCinco(1))
+
 
 function estaEnRango(numero) {
   // Devuelve "true" si "numero" es menor que 50 y mayor que 20
   // De lo contrario, devuelve "false"
   // Tu código:
-}
+  if (numero <= 50 & numero >= 20)
+  {
+      return true;
+  }
+  return false;
+}      
+
+console.log(estaEnRango(30))
+
 
 function esEntero(numero) {
   // Devuelve "true" si "numero" es un entero (int/integer)
+
   // Ejemplo: 0.8 -> false
   // Ejemplo: 1 -> true
   // Ejemplo: -10 -> true
   // De lo contrario, devuelve "false"
   // Pista: Puedes resolver esto usando `Math.floor`
   // Tu código:
+  return numero % 1 === 0;
+    
 }
+console.log(esEntero(7.4))
+
+
 
 function fizzBuzz(numero) {
   // Si "numero" es divisible entre 3, devuelve "fizz"
   // Si "numero" es divisible entre 5, devuelve "buzz"
   // Si "numero" es divisible entre 3 y 5 (ambos), devuelve "fizzbuzz"
   // De lo contrario, devuelve el numero
+  {
+    if (numero % 3 === 0 &  numero % 5 === 0)
+    {
+        return "fizzBuzz";
+    }
+    if (numero % 3 === 0)
+    return "buzz";
+    if (numero % 5 === 0)
+    return "ffuzz";
+    return numero;
+
+
 }
+console.log(fizzBuzz(15))
+
 
 function operadoresLogicos(num1, num2, num3) {
   //La función recibe tres números distintos. 
@@ -87,7 +201,34 @@ function operadoresLogicos(num1, num2, num3) {
   //Si num3 es más grande que num1 y num2, aumentar su valor en 1 y retornar el nuevo valor.
   //0 no es ni positivo ni negativo. Si alguno de los argumentos es 0, retornar "Error".
   //Si no se cumplen ninguna de las condiciones anteriores, retornar false. 
-}
+  function operadoresLogicos(num1, num2, num3)
+{
+           
+            if ( num1 > 0 &&  num1 > num2 && num1 > num3)
+            {
+                return "numero1 es mayor y es positivo"
+            }   
+            else if (num1 < 0 || num2 < 0 || num3 < 0)
+            {
+               return "hay negativos"
+            }
+           
+            else if (num3 > num2 && num3 > num1)
+            {
+                return num3 + 1
+            }
+            else if ( num1 === 0 || num2 === 0 || num3 === 0 )
+            {
+                return "error"
+            }
+            
+            else
+            {
+                return false
+            }
+        }
+        console.log(operadoresLogicos(1,22,30))
+
 
 function esPrimo(numero) {
   // Devuelve "true" si "numero" es primo
@@ -95,6 +236,17 @@ function esPrimo(numero) {
   // Pista: un número primo solo es divisible por sí mismo y por 1
   // Pista 2: Puedes resolverlo usando un bucle `for`
   // Nota: Los números 0 y 1 NO son considerados números primos
+  {
+    if (numero % 2 === 1 || numero % 2 === numero)
+    {
+        return true
+    }
+    else
+    {
+        return false
+    }
+}
+console.log(esPrimo(50))
 }
 
 function esVerdadero(valor){
@@ -108,19 +260,57 @@ function tablaDelSeis(){
   //Escribe una función que muestre la tabla de multiplicar del 6 (del 0 al 60).
   //La función devuelve un array con los resultados de la tabla de multiplicar del 6 en orden creciente.
   //Escribe tu código aquí   
+  {
+    
+    let arrayTablaDel6 = []
+    for (let i = 0; i < 11; i++)
+     {
+          arrayTablaDel6.push(6 * i)
+    }
+    return arrayTablaDel6
+    
+  }
+ console.log(tablaDelSeis([]))
   
-}
+
 
 function tieneTresDigitos(numero){
   //Leer un número entero y retornar true si tiene 3 dígitos. Caso contrario, retorna false.
   //Escribe tu código aquí
+  if (numero.length === 3)
+  {
+      return true
+  }
+  else
+  {
+      return false
+  }
   
+
 }
+
+console.log(tieneTresDigitos("345"))
+  
+
 
 function doWhile(numero) {
   //Implementar una función tal que vaya aumentando el valor recibido en 5 hasta un límite de 8 veces
   //Retornar el valor final.
   //Usar el bucle do ... while.
+  function doWhile(numero)
+{
+    var a =numero 
+    var i = 0
+    do
+    {
+        i= i+1
+        a = a+5
+    }
+    while  (i < 3)
+    
+        return a
+}
+console.log(doWhile(1))
 }
 
 
@@ -143,4 +333,4 @@ module.exports = {
   tablaDelSeis,
   tieneTresDigitos,
   doWhile
-};
+}
