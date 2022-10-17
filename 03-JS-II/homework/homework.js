@@ -18,15 +18,11 @@ function obtenerMayor(x, y)
 console.log(obtenermayor(2,89))
 
 
-function mayoriaDeEdad(edad) {
-  //Determinar si la persona según su edad puede ingresar a un evento.
-  //Si tiene 18 años ó más, devolver --> "Allowed"
-  //Si es menor, devolver --> "Not allowed"
-  
+function mayoriaDeEdad(edad)
  {
     if (edad >= 18)
         {
-        let edad = "alowed";
+        let edad = "alowed by name";
         console.log(edad)
         }
         else if ( edad < 18)
@@ -39,8 +35,6 @@ function mayoriaDeEdad(edad) {
    
   }
   console.log(mayoriaDeEdad(-18))
-
-}
   
 function conection(status) {
   //Recibimos un estado de conexión de un usuario representado por un valor numérico. 
@@ -333,4 +327,4 @@ module.exports = {
   tablaDelSeis,
   tieneTresDigitos,
   doWhile
-}
+};

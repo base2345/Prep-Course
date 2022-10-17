@@ -171,6 +171,7 @@ function multiplicarArgumentos() {
 }
 
 
+
 function cuentoElementos(arreglo)
 
 {
@@ -190,7 +191,7 @@ function cuentoElementos(arreglo)
 
 
 function diaDeLaSemana(numeroDeDia) {
-  function diaDeLaSemana(numeroDeDia)
+  
 {
   var dias = [ {dia: "lunes",numeroDeDia: 1},{dia: "sabado",numeroDeDia: 2},];
 var dia = []
@@ -295,7 +296,7 @@ function breakStatement(numero)
 }
 if(arrayNumeros.length < 10)
 {
-  return "se interumpio la funcion";
+  return "se interumpio la funcionwwff";
 }
 else if(arraynumeros.length === 10)
 {
@@ -311,7 +312,20 @@ function continueStatement(numero) {
   //Cuando el número de iteraciones alcance el valor 5, no se suma en ese caso y se continua con la siguiente iteración
   //Pista: usá el statement 'continue'
   // Tu código:
+  var array = [];
+  var suma = numero;
+  for(var i= 0; i<10; i++) {
+    if(i === 5) continue;
+    else {
+      
+      array.push(suma[i]+2);
+    }
+  }
+  return array;
 }
+console.log(console.log(continueStatement([3,9,4,5,6,7,9,9,1,0])))
+
+
 
 
 // No modificar nada debajo de esta línea
